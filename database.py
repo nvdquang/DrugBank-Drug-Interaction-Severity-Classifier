@@ -59,6 +59,9 @@ class Database:
     def load_interactions(
         self,
         limit: int | None = None,
+        offset: int | None = None,
+        start_id: int | None = None,
+        end_id: int | None = None,
     ) -> Iterator[list[Interaction]]:
 
         sql = """
@@ -70,8 +73,16 @@ class Database:
               AND description <> ''
         """
 
-        if limit:
+        if start_id is not None:
+            sql += f"\n              AND id >= {start_id}"
+
+        if end_id is not None:
+            sql += f"\n              AND id <= {end_id}"
+
+        if limit is not None:
             sql += f"\nLIMIT {limit}"
+            if offset is not None:
+                sql += f" OFFSET {offset}"
 
         with self.read_conn.cursor() as cursor:
 

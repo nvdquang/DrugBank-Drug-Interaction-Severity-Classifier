@@ -37,6 +37,9 @@ class Runner:
     def run(
         self,
         limit: int | None = None,
+        offset: int | None = None,
+        start_id: int | None = None,
+        end_id: int | None = None,
     ) -> None:
 
         start_time = time.time()
@@ -55,7 +58,12 @@ class Runner:
             # Load interactions by batch
             # ==========================================
 
-            for interactions in self.db.load_interactions(limit):
+            for interactions in self.db.load_interactions(
+                limit=limit,
+                offset=offset,
+                start_id=start_id,
+                end_id=end_id,
+            ):
 
                 # --------------------------------------
                 # Classify current batch

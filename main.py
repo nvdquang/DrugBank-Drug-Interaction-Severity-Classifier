@@ -28,6 +28,27 @@ def parse_args() -> argparse.Namespace:
         help="Number of records to process (default: process all records).",
     )
 
+    parser.add_argument(
+        "--offset",
+        type=int,
+        default=None,
+        help="Offset index to start reading records from.",
+    )
+
+    parser.add_argument(
+        "--start-id",
+        type=int,
+        default=None,
+        help="Minimum record ID to process.",
+    )
+
+    parser.add_argument(
+        "--end-id",
+        type=int,
+        default=None,
+        help="Maximum record ID to process.",
+    )
+
     return parser.parse_args()
 
 
@@ -42,6 +63,9 @@ def main() -> None:
 
     runner.run(
         limit=args.limit,
+        offset=args.offset,
+        start_id=args.start_id,
+        end_id=args.end_id,
     )
 
 

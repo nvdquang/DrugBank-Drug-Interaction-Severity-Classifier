@@ -17,8 +17,8 @@ class Config:
     host: str = "localhost"
     port: int = 3306
     user: str = "root"
-    password: str = "Qu@ngnvd123"
-    database: str = "cdss"
+    password: str = "Password"
+    database: str = "Database"
 
     # =====================================================
     # Batch

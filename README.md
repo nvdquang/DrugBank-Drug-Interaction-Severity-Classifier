@@ -158,17 +158,47 @@ class Config:
 
 ## 🚀 Usage
 
-### Process All Interaction Records
+### 1. Standard Full Processing
+Process all records in the database:
 ```bash
 python main.py
 ```
 
-### Process Sample Batch (e.g., First 1,000 Records)
+### 2. Sample Batch Processing
+Process the first 1,000 records for testing:
 ```bash
 python main.py 1000
 ```
 
-### Run Unit Tests
+### 3. Chunked Processing Strategies (For Large Datasets ~3 Million Records)
+
+For processing large datasets in multi-pass chunks (e.g., 3 passes of 1,000,000 records each):
+
+#### Option A: Offset-based Chunking (`limit` & `--offset`)
+```bash
+# Pass 1: First 1,000,000 records
+python main.py 1000000 --offset 0
+
+# Pass 2: Second 1,000,000 records
+python main.py 1000000 --offset 1000000
+
+# Pass 3: Remaining records
+python main.py 1000000 --offset 2000000
+```
+
+#### Option B: ID Range Chunking (`--start-id` & `--end-id`) *(Fastest MySQL Query)*
+```bash
+# Pass 1: ID range 1 to 1,000,000
+python main.py --start-id 1 --end-id 1000000
+
+# Pass 2: ID range 1,000,001 to 2,000,000
+python main.py --start-id 1000001 --end-id 2000000
+
+# Pass 3: ID range 2,000,001 to 3,000,000
+python main.py --start-id 2000001 --end-id 3000000
+```
+
+### 4. Run Unit Tests
 ```bash
 python -m unittest test_patterns.py
 ```

@@ -1,0 +1,210 @@
+{
+  "major": {
+
+    "hematologic": [
+      "bleeding",
+      "hemorrhage",
+      "thrombosis",
+      "embolism",
+      "thromboembolism",
+      "pulmonary embolism",
+      "thrombocytopenia",
+      "thrombogenic",
+      "anemia",
+      "neutropenia",
+      "agranulocytosis",
+      "myelosuppression",
+      "bone marrow suppression"
+    ],
+
+    "cardiovascular": [
+      "arrhythmia",
+      "qt prolongation",
+      "torsades de pointes",
+      "bradycardia",
+      "tachycardia",
+      "cardiotoxicity",
+      "heart failure",
+      "congestive heart failure",
+      "cardiac arrest"
+    ],
+
+    "neurologic": [
+      "seizure",
+      "coma",
+      "serotonin syndrome",
+      "neuroleptic malignant syndrome",
+      "peripheral neuropathy",
+      "cns toxicity",
+      "encephalopathy",
+      "confusion",
+      "syncope",
+      "pseudotumor cerebri",
+      "neurotoxicity"
+    ],
+
+    "hepatic": [
+      "liver injury",
+      "hepatotoxicity",
+      "liver failure"
+    ],
+
+    "renal": [
+      "renal failure",
+      "acute kidney injury",
+      "nephrotoxicity"
+    ],
+
+    "respiratory": [
+      "respiratory depression",
+      "respiratory failure",
+      "pulmonary toxicity",
+      "bronchospasm"
+    ],
+
+    "infectious": [
+      "infection",
+      "sepsis",
+      "opportunistic infection"
+    ],
+
+    "immune": [
+      "immunosuppression",
+      "anaphylaxis",
+      "angioedema",
+      "cytokine release syndrome"
+    ],
+
+    "metabolic": [
+      "hypoglycemia",
+      "hyperglycemia",
+      "hyperkalemia",
+      "hypokalemia",
+      "hypernatremia",
+      "hyponatremia",
+      "hypercalcemia",
+      "hypocalcemia",
+      "methemoglobinemia",
+      "rhabdomyolysis",
+      "pancreatitis"
+    ],
+
+    "musculoskeletal": [
+      "myopathy",
+      "rhabdomyolysis",
+      "tendinopathy",
+      "osteonecrosis"
+    ],
+
+    "ophthalmic": [
+      "vision loss",
+      "blindness"
+    ],
+
+    "otologic": [
+      "ototoxicity"
+    ]
+
+  },
+
+  "moderate": {
+
+    "pharmacodynamic": [
+      "adverse effects",
+      "therapeutic efficacy",
+      "clinical efficacy",
+      "diagnostic efficacy",
+      "drug interaction"
+    ],
+
+    "pharmacokinetic": [
+      "metabolism",
+      "absorption",
+      "distribution",
+      "bioavailability",
+      "protein binding",
+      "clearance",
+      "elimination",
+      "excretion",
+      "serum concentration",
+      "plasma concentration",
+      "blood concentration",
+      "drug concentration",
+      "pharmacokinetics",
+      "pharmacodynamics"
+    ],
+
+    "hemostasis": [
+      "anticoagulant",
+      "antiplatelet"
+    ],
+
+    "vascular": [
+      "vasoconstricting",
+      "vasodilatory",
+      "vasopressor",
+      "vasodilator",
+      "hypotension",
+      "hypertension",
+      "orthostatic hypotension"
+    ],
+
+    "neurologic": [
+      "sedative",
+      "cns depression",
+      "anticholinergic",
+      "neuromuscular blockade",
+      "neuroexcitatory"
+    ],
+
+    "metabolic": [
+      "dehydration"
+    ],
+
+    "gastrointestinal": [
+      "gastrointestinal irritation",
+      "reduced gastrointestinal motility"
+    ],
+
+    "miscellaneous": [
+      "electrolyte balance",
+      "diagnostic agent"
+    ]
+
+  },
+
+  "minor": {
+
+    "gastrointestinal": [
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "constipation",
+      "abdominal pain",
+      "abdominal discomfort",
+      "dyspepsia"
+    ],
+
+    "dermatologic": [
+      "rash",
+      "pruritus",
+      "urticaria",
+      "flushing",
+      "mild skin reaction",
+      "skin irritation",
+      "local irritation",
+      "injection site reaction"
+    ],
+
+    "general": [
+      "headache",
+      "dizziness",
+      "fatigue",
+      "somnolence",
+      "sedation",
+      "insomnia",
+      "dry mouth"
+    ]
+
+  }
+}

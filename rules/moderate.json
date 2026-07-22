@@ -1,0 +1,25 @@
+{
+    "severity": "moderate",
+    "patterns": [
+        "\\bmoderate\\b",
+        "moderately clinically significant",
+        "monitor closely",
+        "close monitoring",
+        "monitor therapy",
+        "monitor patient",
+        "dose adjustment",
+        "adjust the dose",
+        "use with caution",
+        "use cautiously",
+        "consider dose reduction",
+        "consider dose adjustment",
+        "may increase the serum concentration",
+        "may decrease the serum concentration",
+        "may increase the effect",
+        "may decrease the effect",
+        "may increase the risk",
+        "may decrease the efficacy",
+        "therapy should be monitored",
+        "careful monitoring is recommended"
+    ]
+}

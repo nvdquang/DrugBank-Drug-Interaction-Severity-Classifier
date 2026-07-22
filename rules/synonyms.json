@@ -1,0 +1,618 @@
+{
+    "bleeding and hemorrhage": "bleeding",
+    "hemorrhage and bleeding": "bleeding",
+    "bleeding and bruising": "bleeding",
+    "bruising and bleeding": "bleeding",
+    "major bleeding": "bleeding",
+    "minor bleeding": "bleeding",
+    "gastrointestinal bleeding": "bleeding",
+    "upper gastrointestinal bleeding": "bleeding",
+    "lower gastrointestinal bleeding": "bleeding",
+    "digestive tract bleeding": "bleeding",
+    "internal bleeding": "bleeding",
+    "excessive bleeding": "bleeding",
+    "risk of bleeding": "bleeding",
+
+    "intracranial hemorrhage": "hemorrhage",
+    "cerebral hemorrhage": "hemorrhage",
+    "brain hemorrhage": "hemorrhage",
+    "intracerebral hemorrhage": "hemorrhage",
+    "subarachnoid hemorrhage": "hemorrhage",
+
+    "bleeding tendency": "bleeding",
+    "hemorrhagic events": "hemorrhage",
+    "hemorrhagic complications": "hemorrhage",
+
+    "thrombogenic activity": "thrombogenic",
+    "thrombogenic activities": "thrombogenic",
+
+    "thromboembolic events": "thromboembolism",
+    "thromboembolic disease": "thromboembolism",
+    "venous thromboembolism": "thromboembolism",
+    "arterial thromboembolism": "thromboembolism",
+
+    "venous thrombosis": "thrombosis",
+    "arterial thrombosis": "thrombosis",
+    "deep vein thrombosis": "thrombosis",
+    "portal vein thrombosis": "thrombosis",
+
+    "platelet reduction": "thrombocytopenia",
+    "platelet count decrease": "thrombocytopenia",
+    "low platelet count": "thrombocytopenia",
+
+    "bone marrow toxicity": "bone marrow suppression",
+    "bone marrow depression": "bone marrow suppression",
+
+    "myelosuppressive activity": "myelosuppression",
+    "myelosuppressive activities": "myelosuppression",
+
+    "neutrophil count decrease": "neutropenia",
+    "absolute neutrophil count decrease": "neutropenia",
+
+    "low white blood cell count": "leukopenia",
+    "white blood cell count decrease": "leukopenia",
+
+    "red blood cell count decrease": "anemia",
+    "hemoglobin decrease": "anemia",
+
+    "qtc prolongation": "qt prolongation",
+    "qt interval prolongation": "qt prolongation",
+    "prolongation of qt interval": "qt prolongation",
+    "prolonged qt interval": "qt prolongation",
+    "prolonged qtc interval": "qt prolongation",
+
+    "qtc prolongation and torsades de pointes": "torsades de pointes",
+    "qt prolongation and torsades de pointes": "torsades de pointes",
+
+    "torsade de pointes": "torsades de pointes",
+
+    "ventricular arrhythmia": "arrhythmia",
+    "supraventricular arrhythmia": "arrhythmia",
+    "cardiac arrhythmia": "arrhythmia",
+
+    "slow heart rate": "bradycardia",
+    "decreased heart rate": "bradycardia",
+
+    "rapid heart rate": "tachycardia",
+    "increased heart rate": "tachycardia",
+
+    "congestive cardiac failure": "congestive heart failure",
+    "chf": "congestive heart failure",
+
+    "cardiac toxicity": "cardiotoxicity",
+    "heart toxicity": "cardiotoxicity",
+
+    "low blood pressure": "hypotension",
+    "hypotensive activity": "hypotension",
+    "hypotensive activities": "hypotension",
+
+    "high blood pressure": "hypertension",
+    "hypertensive activity": "hypertension",
+    "hypertensive activities": "hypertension",
+
+    "low serum potassium": "hypokalemia",
+    "decreased potassium": "hypokalemia",
+
+    "high serum potassium": "hyperkalemia",
+    "increased potassium": "hyperkalemia",
+
+    "low serum sodium": "hyponatremia",
+    "decreased sodium": "hyponatremia",
+
+    "high serum sodium": "hypernatremia",
+    "increased sodium": "hypernatremia",
+
+    "low serum calcium": "hypocalcemia",
+    "decreased calcium": "hypocalcemia",
+
+    "high serum calcium": "hypercalcemia",
+    "increased calcium": "hypercalcemia",
+
+    "low serum magnesium": "hypomagnesemia",
+    "decreased magnesium": "hypomagnesemia",
+
+    "high serum magnesium": "hypermagnesemia",
+    "increased magnesium": "hypermagnesemia",
+
+    "hepatic injury": "liver injury",
+    "hepatic damage": "liver injury",
+    "liver damage": "liver injury",
+    "drug induced liver injury": "liver injury",
+    "drug-induced liver injury": "liver injury",
+    "dili": "liver injury",
+    "hepatic impairment": "liver injury",
+    "liver impairment": "liver injury",
+    "acute liver injury": "liver injury",
+    "severe liver injury": "liver injury",
+
+    "hepatic toxicity": "hepatotoxicity",
+    "liver toxicity": "hepatotoxicity",
+    "drug induced hepatotoxicity": "hepatotoxicity",
+
+    "hepatic failure": "liver failure",
+    "acute liver failure": "liver failure",
+    "fulminant hepatic failure": "liver failure",
+
+    "renal impairment": "renal failure",
+    "renal dysfunction": "renal failure",
+    "kidney impairment": "renal failure",
+    "kidney dysfunction": "renal failure",
+    "renal injury": "renal failure",
+    "kidney injury": "renal failure",
+    "acute kidney injury": "renal failure",
+    "aki": "renal failure",
+
+    "renal toxicity": "nephrotoxicity",
+    "kidney toxicity": "nephrotoxicity",
+    "drug induced nephrotoxicity": "nephrotoxicity",
+
+    "respiratory toxicity": "respiratory toxicity",
+    "pulmonary toxicity": "respiratory toxicity",
+    "lung toxicity": "respiratory toxicity",
+
+    "pulmonary fibrosis": "pulmonary toxicity",
+    "interstitial lung disease": "pulmonary toxicity",
+    "ild": "pulmonary toxicity",
+
+    "respiratory insufficiency": "respiratory depression",
+    "respiratory failure": "respiratory depression",
+
+    "infection risk": "infection",
+    "serious infection": "infection",
+    "severe infection": "infection",
+    "systemic infection": "infection",
+    "opportunistic infection": "infection",
+    "bacterial infection": "infection",
+    "viral infection": "infection",
+    "fungal infection": "infection",
+    "localized infection": "infection",
+
+    "risk of infection": "infection",
+
+    "sepsis": "infection",
+    "septicemia": "infection",
+    "bloodstream infection": "infection",
+
+    "immune suppression": "immunosuppression",
+    "immune suppression activity": "immunosuppression",
+    "immune suppression activities": "immunosuppression",
+
+    "immunosuppressive activity": "immunosuppression",
+    "immunosuppressive activities": "immunosuppression",
+
+    "reduced immune response": "immunosuppression",
+    "suppressed immune response": "immunosuppression",
+
+    "hypersensitivity reaction": "hypersensitivity",
+    "allergic reaction": "hypersensitivity",
+    "drug hypersensitivity": "hypersensitivity",
+
+    "anaphylactic reaction": "anaphylaxis",
+    "anaphylactic shock": "anaphylaxis",
+
+    "angioedema reaction": "angioedema",
+    "facial angioedema": "angioedema",
+
+    "cytokine release syndrome": "cytokine release syndrome",
+    "crs": "cytokine release syndrome",
+
+    "peripheral nerve damage": "peripheral neuropathy",
+    "peripheral nerve toxicity": "peripheral neuropathy",
+    "peripheral neurotoxicity": "peripheral neuropathy",
+    "sensory neuropathy": "peripheral neuropathy",
+    "motor neuropathy": "peripheral neuropathy",
+    "neuropathy": "peripheral neuropathy",
+
+    "central nervous system depression": "cns depression",
+    
+    "cns depressant": "cns depression",
+    "cns depressant activity": "cns depression",
+
+    "sedative activity": "sedation",
+    "sedative activities": "sedation",
+    "excessive sedation": "sedation",
+    "somnolence": "sedation",
+    "drowsiness": "sedation",
+
+    "confusional state": "confusion",
+    "mental confusion": "confusion",
+    "altered mental status": "confusion",
+
+    "sleep disorder": "sleep disorders",
+    "sleep disturbance": "sleep disorders",
+    "sleep disturbances": "sleep disorders",
+    "insomnia": "sleep disorders",
+
+    "agitation": "irritability",
+    "behavioral irritability": "irritability",
+
+    "convulsions": "seizure",
+    "epileptic seizure": "seizure",
+    "status epilepticus": "seizure",
+
+    "loss of consciousness": "coma",
+    "unconsciousness": "coma",
+
+    "serotonergic toxicity": "serotonin syndrome",
+    "serotonin toxicity": "serotonin syndrome",
+
+    "nms": "neuroleptic malignant syndrome",
+
+    "muscle breakdown": "rhabdomyolysis",
+    "skeletal muscle breakdown": "rhabdomyolysis",
+
+    "blood glucose reduction": "hypoglycemia",
+    "low blood glucose": "hypoglycemia",
+    "decreased blood glucose": "hypoglycemia",
+
+    "blood glucose increase": "hyperglycemia",
+    "high blood glucose": "hyperglycemia",
+    "increased blood glucose": "hyperglycemia",
+
+    "reduced calcium": "hypocalcemia",
+    "decreased serum calcium": "hypocalcemia",
+
+    "thyroid dysfunction": "thyroid disorder",
+    "hypothyroidism": "thyroid disorder",
+    "hyperthyroidism": "thyroid disorder",
+
+    "hematologic toxicity": "myelosuppression",
+    "haematologic toxicity": "myelosuppression",
+
+    "white blood cell suppression": "leukopenia",
+    "white blood cell reduction": "leukopenia",
+
+    "platelet suppression": "thrombocytopenia",
+
+    "red blood cell suppression": "anemia",
+
+    "febrile neutropenia": "neutropenia",
+
+    "anti-tumor efficacy": "therapeutic efficacy",
+    "antitumor efficacy": "therapeutic efficacy",
+    "anti cancer efficacy": "therapeutic efficacy",
+    "anticancer efficacy": "therapeutic efficacy",
+
+    "clinical response": "therapeutic efficacy",
+    "treatment response": "therapeutic efficacy",
+
+    "loss of efficacy": "therapeutic efficacy",
+    "reduced efficacy": "therapeutic efficacy",
+    "decreased efficacy": "therapeutic efficacy",
+    "reduced therapeutic efficacy": "therapeutic efficacy",
+
+    "drug effectiveness": "therapeutic efficacy",
+    "treatment effectiveness": "therapeutic efficacy",
+
+    "diagnostic effectiveness": "diagnostic efficacy",
+    "diagnostic performance": "diagnostic efficacy",
+    "diagnostic sensitivity": "diagnostic efficacy",
+    "imaging efficacy": "diagnostic efficacy",
+
+    "tumor lysis": "tumor lysis syndrome",
+    "tumour lysis": "tumor lysis syndrome",
+    "tls": "tumor lysis syndrome",
+
+  
+    "nausea and vomiting": "nausea",
+    "vomiting and nausea": "nausea",
+    "severe nausea": "nausea",
+    "persistent nausea": "nausea",
+
+    "severe vomiting": "vomiting",
+    "persistent vomiting": "vomiting",
+
+    "loose stools": "diarrhea",
+    "frequent diarrhea": "diarrhea",
+
+    "hard stools": "constipation",
+
+    "abdominal pain": "abdominal discomfort",
+    "abdominal cramps": "abdominal discomfort",
+    "stomach pain": "abdominal discomfort",
+    "gastric discomfort": "abdominal discomfort",
+    "epigastric discomfort": "abdominal discomfort",
+
+    "indigestion": "dyspepsia",
+    "gastric irritation": "dyspepsia",
+
+    "cutaneous rash": "rash",
+    "skin rash": "rash",
+    "drug rash": "rash",
+    "maculopapular rash": "rash",
+
+    "itching": "pruritus",
+    "skin itching": "pruritus",
+
+    "erythema": "flushing",
+    "facial flushing": "flushing",
+
+    "infusion site reaction": "injection site reaction",
+    "local injection reaction": "injection site reaction",
+    "injection site erythema": "injection site reaction",
+    "injection site pain": "injection site reaction",
+
+    "mild skin toxicity": "mild skin reaction",
+    "cutaneous toxicity": "mild skin reaction",
+
+    "blurred vision": "visual disturbance",
+    "visual impairment": "visual disturbance",
+    "visual disturbance": "visual disturbance",
+
+    "ocular toxicity": "eye toxicity",
+    "eye toxicity": "eye toxicity",
+
+    "muscle weakness": "neuromuscular weakness",
+    "skeletal muscle weakness": "neuromuscular weakness",
+
+    "neuromuscular blocking activity": "neuromuscular blockade",
+    "neuromuscular blocking activities": "neuromuscular blockade",
+
+    "myopathy": "muscle toxicity",
+    "muscle toxicity": "muscle toxicity",
+
+    "bone toxicity": "bone disorder",
+
+    "reproductive toxicity": "reproductive disorder",
+    "fertility impairment": "reproductive disorder",
+
+    "embryo toxicity": "fetal toxicity",
+    "fetal toxicity": "fetal toxicity",
+    "teratogenicity": "teratogenicity",
+
+    
+
+    "adverse reaction": "adverse effects",
+    "adverse reactions": "adverse effects",
+    "drug toxicity": "adverse effects",
+    "treatment toxicity": "adverse effects",
+    "treatment-related toxicity": "adverse effects",
+
+    "side effect": "adverse effects",
+    "side effects": "adverse effects",
+
+    "pharmacodynamic activity": "pharmacodynamics",
+    "pharmacodynamic activities": "pharmacodynamics",
+
+    "drug interaction": "pharmacodynamics",
+
+    "anticoagulant activity": "anticoagulant",
+    "anticoagulant activities": "anticoagulant",
+
+    "antiplatelet activity": "antiplatelet",
+    "antiplatelet activities": "antiplatelet",
+
+    "vasodilatory activity": "vasodilatory",
+    "vasodilatory activities": "vasodilatory",
+
+    "vasoconstricting activity": "vasoconstricting",
+    "vasoconstricting activities": "vasoconstricting",
+
+    "central nervous system depressant activity": "cns depression",
+    "central nervous system depressant activities": "cns depression",
+
+    "drug exposure": "serum concentration",
+    "systemic exposure": "serum concentration",
+
+    "blood level": "blood concentration",
+    "drug level": "serum concentration",
+
+    "reduced absorption": "absorption",
+    "decreased absorption": "absorption",
+    "increased absorption": "absorption",
+
+    "reduced bioavailability": "bioavailability",
+    "decreased bioavailability": "bioavailability",
+
+    "reduced elimination": "elimination",
+    "decreased elimination": "elimination",
+
+    "reduced clearance": "clearance",
+    "decreased clearance": "clearance",
+
+    "protein displacement": "protein binding",
+    "plasma protein binding": "protein binding",
+
+  
+    "methemoglobin formation": "methemoglobinemia",
+    "methemoglobinemia": "methemoglobinemia",
+
+    "pulmonary injury": "pulmonary toxicity",
+    "lung injury": "pulmonary toxicity",
+    "pulmonary damage": "pulmonary toxicity",
+
+    "cardiac failure": "congestive heart failure",
+    "heart failure": "congestive heart failure",
+
+    "heart rhythm disorder": "arrhythmia",
+    "abnormal cardiac rhythm": "arrhythmia",
+
+    "slow cardiac conduction": "bradycardia",
+    "reduced heart rate": "bradycardia",
+
+    "fast cardiac rhythm": "tachycardia",
+
+    "electrolyte disturbance": "electrolyte balance",
+    "electrolyte imbalance": "electrolyte balance",
+
+    "immune dysfunction": "immunosuppression",
+    "immune deficiency": "immunosuppression",
+
+    "marrow suppression": "bone marrow suppression",
+
+    "nerve toxicity": "peripheral neuropathy",
+    "neurotoxicity": "peripheral neuropathy",
+
+    "cognitive impairment": "confusion",
+    "mental impairment": "confusion",
+
+    "hepatic enzyme elevation": "liver injury",
+    "transaminase elevation": "liver injury",
+    "alanine aminotransferase increase": "liver injury",
+    "aspartate aminotransferase increase": "liver injury",
+
+    "renal damage": "renal failure",
+
+    "drug accumulation": "serum concentration",
+    "systemic drug exposure": "serum concentration",
+    "peak plasma concentration": "serum concentration",
+    "steady state concentration": "serum concentration",
+
+    "drug clearance": "clearance",
+    "systemic clearance": "clearance",
+
+    "intestinal absorption": "absorption",
+    "oral absorption": "absorption",
+
+    "drug bioavailability": "bioavailability",
+
+    "drug elimination": "elimination",
+
+    "drug metabolism": "metabolism",
+    "hepatic metabolism": "metabolism",
+
+    "diagnostic agent effectiveness": "diagnostic efficacy",
+    "diagnostic agent efficacy": "diagnostic efficacy",
+    "radiotracer efficacy": "diagnostic efficacy",
+    "imaging agent efficacy": "diagnostic efficacy",
+
+    "treatment efficacy": "therapeutic efficacy",
+    "clinical benefit": "therapeutic efficacy",
+    "therapeutic benefit": "therapeutic efficacy",
+
+    "reduced therapeutic response": "therapeutic efficacy",
+    "loss of clinical response": "therapeutic efficacy",
+
+    "drug adverse effects": "adverse effects",
+    "treatment adverse effects": "adverse effects",
+    "adverse drug reactions": "adverse effects",
+
+    "blood dyscrasia": "myelosuppression",
+
+    "coagulation disorder": "bleeding",
+
+    "coagulopathy": "bleeding",
+
+    "infection susceptibility": "infection",
+
+    "infectious complications": "infection",
+
+    "opportunistic infections": "infection",
+
+    "hypersensitivity reactions": "hypersensitivity",
+
+    "allergic reactions": "hypersensitivity",
+
+    "acute allergic reaction": "hypersensitivity",
+
+    "severe allergic reaction": "anaphylaxis",
+
+    "facial swelling": "angioedema",
+    "oropharyngeal swelling": "angioedema",
+
+    "behavioral disturbance": "irritability",
+
+    "muscle pain": "myopathy",
+    "muscular toxicity": "myopathy",
+
+    "vision disturbance": "visual disturbance",
+
+    "ocular adverse effects": "eye toxicity",
+
+    "skin toxicity": "mild skin reaction",
+
+    "cutaneous adverse effects": "mild skin reaction",
+
+    "application site reaction": "injection site reaction",
+
+    "local site reaction": "injection site reaction",
+
+    "gastrointestinal toxicity": "abdominal discomfort",
+
+    "digestive disorder": "abdominal discomfort",
+
+    "loss of appetite": "decreased appetite",
+
+    "reduced appetite": "decreased appetite",
+
+    "weight reduction": "weight loss",
+
+    "body weight decrease": "weight loss",
+
+    "body weight increase": "weight gain",
+
+    "fluid retention": "edema",
+
+    "peripheral edema": "edema",
+
+    "generalized edema": "edema",
+
+    "drug intolerance": "adverse effects",
+
+    "treatment intolerance": "adverse effects",
+
+    "clinical toxicity": "adverse effects",
+
+    "antihypertensive": "hypotension",
+    "antihypertensive activity": "hypotension",
+    "antihypertensive activities": "hypotension",
+    "hypotensive": "hypotension",
+    "hypotensive activity": "hypotension",
+
+    "bradycardic": "bradycardia",
+    "tachycardic": "tachycardia",
+
+    "hypoglycemic": "hypoglycemia",
+    "hypoglycemic activity": "hypoglycemia",
+
+    "arrhythmogenic": "arrhythmia",
+
+    "qtc-prolonging": "qt prolongation",
+    "qtc prolonging": "qt prolongation",
+    "qtc-prolonging activity": "qt prolongation",
+
+    "immunosuppressive": "immunosuppression",
+
+    "myopathy and weakness": "myopathy",
+
+    "gastrointestinal irritation": "abdominal discomfort",
+
+    "dehydration": "dehydration",
+
+    "orthostatic hypotensive": "orthostatic hypotension",
+
+    "hyperkalemic": "hyperkalemia",
+
+    "analgesic": "adverse effects",
+
+    "central nervous system depressant cns depressant": "cns depression",
+    "neurotoxic": "neurotoxicity",
+    "hypertensive": "hypertension",
+    "myopathy": "myopathy",
+    "myopathy and weakness": "myopathy",
+    "gastrointestinal motility reducing": "reduced gastrointestinal motility",
+    "hyperthermia and oligohydrosis": "adverse effects",
+    "neuroexcitatory": "neuroexcitatory",
+    "stimulatory": "adverse effects",
+    "neuromuscular blocking": "neuromuscular blockade",
+    "tendinopathy": "tendinopathy",
+    "serotonergic": "serotonin syndrome",
+    "hypokalemic": "hypokalemia",
+    "orthostatic hypotensive hypotensive and antihypertensive": "orthostatic hypotension",
+    "pseudotumor cerebri": "pseudotumor cerebri",
+    "neuropsychiatric effects": "confusion",
+    "cardiodepressant": "cardiotoxicity",
+    "edema formation": "adverse effects",
+    "vasospastic reactions": "vasoconstricting",
+    "jaw osteonecrosis and anti-angiogenesis": "osteonecrosis",
+    "qtc prolongation and torsade de pointes": "torsades de pointes",
+    "liver enzyme elevations": "hepatotoxicity",
+    "respiratory toxicity": "pulmonary toxicity",
+    "reye's syndrome": "encephalopathy",
+    "hypotensive and electrolyte disturbance": "hypotension",
+    "hypotensive and central nervous system depressant cns depressant": "cns depression",
+    "electrolyte abnormality": "electrolyte balance",
+    "gastrointestinal ulceration and gastrointestinal irritation": "gastrointestinal irritation",
+    "anticonvulsant toxicity": "cns toxicity",
+    "sinus node depression": "bradycardia"
+}

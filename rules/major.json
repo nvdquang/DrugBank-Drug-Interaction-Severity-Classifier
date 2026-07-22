@@ -1,0 +1,59 @@
+{
+    "severity": "major",
+    "patterns": [
+
+        "contraindicated",
+        "combination is contraindicated",
+        "coadministration is contraindicated",
+        "co-administration is contraindicated",
+
+        "should not be used together",
+        "should not be administered together",
+        "should not be combined",
+        "should not be coadministered",
+
+        "do not use together",
+        "do not administer together",
+        "do not combine",
+        "avoid concomitant use",
+        "avoid coadministration",
+        "avoid co-administration",
+        "avoid this combination",
+        "avoid the combination",
+
+        "life[- ]threatening",
+        "fatal",
+        "death",
+        "severe toxicity",
+        "serious toxicity",
+        "serious adverse",
+        "serious adverse reaction",
+        "serious adverse event",
+
+        "highly clinically significant",
+        "clinically significant interaction",
+        "major interaction",
+
+        "risk outweighs the benefit",
+        "benefit does not outweigh the risk",
+
+        "markedly increase",
+        "markedly decrease",
+
+        "significantly increase",
+        "significantly decreases?",
+        "significantly reduce",
+        "significantly inhibits?",
+        "significantly induce",
+
+        "may result in severe",
+        "may cause severe",
+        "may cause serious",
+        "may result in life[- ]threatening",
+        "may lead to fatal",
+
+        "extreme caution",
+        "requires immediate medical attention"
+    ]
+}
+

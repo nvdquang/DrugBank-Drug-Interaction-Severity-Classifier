@@ -1,0 +1,20 @@
+{
+    "severity": "minor",
+    "patterns": [
+        "\\bminor\\b",
+        "minimally clinically significant",
+        "minimal clinical significance",
+        "minimal risk",
+        "minor interaction",
+        "unlikely to be clinically significant",
+        "unlikely to require intervention",
+        "no action needed",
+        "no intervention required",
+        "routine monitoring",
+        "generally safe",
+        "limited clinical significance",
+        "low clinical significance",
+        "mild interaction",
+        "observe routinely"
+    ]
+}

@@ -131,6 +131,11 @@ The application reads from and updates the target database specified in `config.
 | `pattern` | `VARCHAR` | Interaction mechanism (`pharmacodynamic`, `pharmacokinetic`) |
 | `confidence` | `FLOAT` | Classification confidence score (`1.0` exact match, `0.9` partial) |
 
+### SQL ADD COLUMN
+| ALTER TABLE drug_interactions
+| ADD COLUMN canonical_event VARCHAR(255) NULL AFTER severity,
+| ADD COLUMN pattern VARCHAR(30) NULL AFTER canonical_event,
+| ADD COLUMN confidence DECIMAL(4,2) NULL AFTER pattern;
 ---
 
 ## 🔧 Configuration
@@ -144,7 +149,7 @@ class Config:
     port: int = 3306
     user: str = "root"
     password: str = "YOUR_PASSWORD"
-    database: str = "cdss"
+    database: str = "YOUR_DATABASE"
     fetch_size: int = 5000
     update_batch_size: int = 5000
 ```

@@ -279,6 +279,7 @@ Maps extracted event variants and phrases to their canonical forms:
 ## 👤 Author
 
 **M.Sc. Nguyen Vu Duy Quang**  
+Email: quang@lhu.edu.vn
 Faculty of Information Technology  
 Lac Hong University (LHU) — [lhu.edu.vn](https://lhu.edu.vn)  
 Vietnam

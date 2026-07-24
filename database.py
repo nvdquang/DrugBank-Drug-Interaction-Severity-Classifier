@@ -22,35 +22,45 @@ class Database:
 
     def __init__(self) -> None:
 
-        # -----------------------------------------
-        # Read connection (streaming)
-        # -----------------------------------------
+        try:
+            self.read_conn = pymysql.connect(
+                host=config.host,
+                port=config.port,
+                user=config.user,
+                password=config.password,
+                database=config.database,
+                charset="utf8mb4",
+                autocommit=False,
+                cursorclass=SSDictCursor,
+            )
 
-        self.read_conn = pymysql.connect(
-            host=config.host,
-            port=config.port,
-            user=config.user,
-            password=config.password,
-            database=config.database,
-            charset="utf8mb4",
-            autocommit=False,
-            cursorclass=SSDictCursor,
-        )
+            # -----------------------------------------
+            # Write connection
+            # -----------------------------------------
 
-        # -----------------------------------------
-        # Write connection
-        # -----------------------------------------
+            self.write_conn = pymysql.connect(
+                host=config.host,
+                port=config.port,
+                user=config.user,
+                password=config.password,
+                database=config.database,
+                charset="utf8mb4",
+                autocommit=False,
+                cursorclass=DictCursor,
+            )
+        except pymysql.Error as err:
+            print("\n[ERROR] Could not connect to MySQL database!")
+            print(f"Details: {err}")
+            print(f"\nCurrent Database Config:")
+            print(f"  - Host:     {config.host}:{config.port}")
+            print(f"  - User:     {config.user}")
+            print(f"  - Database: {config.database}")
+            print("\n[HINT] How to fix:")
+            print("  1. Update credentials directly in config.py")
+            print("  2. Or set Environment Variables before running: DB_USER, DB_PASSWORD, DB_NAME, DB_HOST, DB_PORT")
+            raise err
 
-        self.write_conn = pymysql.connect(
-            host=config.host,
-            port=config.port,
-            user=config.user,
-            password=config.password,
-            database=config.database,
-            charset="utf8mb4",
-            autocommit=False,
-            cursorclass=DictCursor,
-        )
+
 
     # =====================================================
     # Read

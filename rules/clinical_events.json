@@ -125,6 +125,12 @@
 
     "otologic": [
       "ototoxicity"
+    ],
+
+    "reproductive": [
+      "teratogenicity",
+      "teratogenic",
+      "fetal toxicity"
     ]
 
   },
@@ -205,7 +211,9 @@
       "dehydration",
       "change in thyroid function",
       "hypothyroid",
-      "hypothyroidism"
+      "hypothyroidism",
+      "hypolipidemic",
+      "hypolipidaemic"
     ],
 
     "gastrointestinal": [

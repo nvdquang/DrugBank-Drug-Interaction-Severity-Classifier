@@ -623,5 +623,15 @@
     "hypothyroid": "hypothyroidism",
     "photosensitizing": "photosensitivity",
     "skeletal muscle relaxing": "smooth muscle relaxing",
-    "dermatologic adverse": "adverse effects"
+    "dermatologic adverse": "adverse effects",
+    "hypolipidaemic": "hypolipidemic",
+    "hypolipidaemic activities": "hypolipidemic",
+    "hypolipidemic activities": "hypolipidemic",
+    "decreased alertness": "cns depression",
+    "decreased alertness activities": "cns depression",
+    "teratogenic": "teratogenicity",
+    "teratogenic activities": "teratogenicity",
+    "constipating": "constipation",
+    "constipating activities": "constipation"
 }
+

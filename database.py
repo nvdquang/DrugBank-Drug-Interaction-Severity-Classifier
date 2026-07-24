@@ -62,6 +62,7 @@ class Database:
         offset: int | None = None,
         start_id: int | None = None,
         end_id: int | None = None,
+        only_unknown: bool = False,
     ) -> Iterator[list[Interaction]]:
 
         sql = """
@@ -72,6 +73,9 @@ class Database:
             WHERE description IS NOT NULL
               AND description <> ''
         """
+
+        if only_unknown:
+            sql += "\n              AND (severity IS NULL OR severity = '' OR severity = 'unknown')"
 
         if start_id is not None:
             sql += f"\n              AND id >= {start_id}"

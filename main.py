@@ -49,6 +49,14 @@ def parse_args() -> argparse.Namespace:
         help="Maximum record ID to process.",
     )
 
+    parser.add_argument(
+        "--only-unknown",
+        "--unknown-only",
+        action="store_true",
+        dest="only_unknown",
+        help="Only process and update records where severity is unknown, NULL, or empty.",
+    )
+
     return parser.parse_args()
 
 
@@ -66,6 +74,7 @@ def main() -> None:
         offset=args.offset,
         start_id=args.start_id,
         end_id=args.end_id,
+        only_unknown=args.only_unknown,
     )
 
 

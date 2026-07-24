@@ -55,7 +55,7 @@ class PatternMatcher:
             (
                 PD,
                 re.compile(
-                    r"The risk or severity of (.+?) can be (increased|decreased)",
+                    r"The risk or severity of (.+?) (?:can be|is) (increased|decreased)",
                     re.IGNORECASE,
                 ),
             ),
@@ -63,7 +63,7 @@ class PatternMatcher:
             (
                 PD,
                 re.compile(
-                    r"The risk of (.+?) can be (increased|decreased)",
+                    r"The risk of (.+?) (?:can be|is) (increased|decreased)",
                     re.IGNORECASE,
                 ),
             ),
@@ -104,7 +104,7 @@ class PatternMatcher:
                 PD,
                 re.compile(
                     # Capture the direction (increase/decrease) so extraction can rely on a group
-                    r".+? can cause a (decrease|increase) in the absorption of .+? resulting in .*? (?:decrease|increase) in efficacy",
+                    r".+? can cause an? (decrease|increase) in the absorption of .+? resulting in .*? (?:decrease|increase|worsening)",
                     re.IGNORECASE,
                 ),
             ),
@@ -116,7 +116,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The metabolism of .+? can be (increased|decreased)",
+                    r"The metabolism of (?:the active metabolites? of )?.+? can be (increased|decreased|reduced)",
                     re.IGNORECASE,
                 ),
             ),
@@ -124,7 +124,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The serum concentration of .+? can be (increased|decreased)",
+                    r"The serum concentration of (?:the active metabolites? of )?.+? can be (increased|decreased|reduced)",
                     re.IGNORECASE,
                 ),
             ),
@@ -132,7 +132,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The plasma concentration of .+? can be (increased|decreased)",
+                    r"The plasma concentration of (?:the active metabolites? of )?.+? can be (increased|decreased|reduced)",
                     re.IGNORECASE,
                 ),
             ),
@@ -140,7 +140,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The blood concentration of .+? can be (increased|decreased)",
+                    r"The blood concentration of (?:the active metabolites? of )?.+? can be (increased|decreased|reduced)",
                     re.IGNORECASE,
                 ),
             ),
@@ -148,7 +148,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The bioavailability of .+? can be (increased|decreased)",
+                    r"The bioavailability of .+? can be (increased|decreased|reduced)",
                     re.IGNORECASE,
                 ),
             ),
@@ -156,7 +156,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The absorption of .+? can be (increased|decreased)",
+                    r"The absorption of .+? can be (increased|decreased|reduced)",
                     re.IGNORECASE,
                 ),
             ),
@@ -164,7 +164,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The excretion rate of .+? can be (increased|decreased)",
+                    r"The excretion (?:rate )?of .+? can be (increased|decreased)",
                     re.IGNORECASE,
                 ),
             ),
@@ -172,7 +172,7 @@ class PatternMatcher:
             (
                 PK,
                 re.compile(
-                    r"The protein binding of .+? can be (increased|decreased)",
+                    r"The protein binding of .+? can be (increased|decreased|reduced)",
                     re.IGNORECASE,
                 ),
             ),
@@ -230,7 +230,7 @@ class PatternMatcher:
                     if len(m.groups()) >= 1 and m.group(1):
                         # Normalize group value to consistent past-tense form
                         d = m.group(1).lower()
-                        if d in ("decrease", "decreased"):
+                        if d in ("decrease", "decreased", "reduced"):
                             direction = "decreased"
                         elif d in ("increase", "increased"):
                             direction = "increased"
@@ -290,7 +290,9 @@ class PatternMatcher:
             else:
                 event = "pharmacokinetics"
 
-            direction = m.group(1).lower()
+            direction = m.group(1).lower() if len(m.groups()) >= 1 else "increased"
+            if direction in ("reduced", "decrease"):
+                direction = "decreased"
 
             return PatternResult(
 

@@ -614,5 +614,12 @@
     "electrolyte abnormality": "electrolyte balance",
     "gastrointestinal ulceration and gastrointestinal irritation": "gastrointestinal irritation",
     "anticonvulsant toxicity": "cns toxicity",
-    "sinus node depression": "bradycardia"
+    "sinus node depression": "bradycardia",
+    "bronchodilatory": "bronchodilation",
+    "bronchoconstrictory": "bronchospasm",
+    "hypersensitivity reaction": "hypersensitivity",
+    "atrioventricular blocking": "av block",
+    "atrioventricular blocking av block": "av block",
+    "hypothyroid": "hypothyroidism",
+    "photosensitizing": "photosensitivity"
 }

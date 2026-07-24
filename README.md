@@ -198,7 +198,18 @@ python main.py --start-id 1000001 --end-id 2000000
 python main.py --start-id 2000001 --end-id 3000000
 ```
 
-### 4. Run Unit Tests
+### 4. Selective Processing for Unknown Records (`--only-unknown` / `--unknown-only`)
+Re-process and update only records where severity is currently `unknown`, `NULL`, or empty (avoiding re-evaluating already classified records):
+```bash
+python main.py --only-unknown
+```
+
+Can be combined with limits, offsets, or ID ranges:
+```bash
+python main.py 5000 --only-unknown --start-id 10000
+```
+
+### 5. Run Unit Tests
 ```bash
 python -m unittest test_patterns.py
 ```

@@ -14,7 +14,10 @@
       "neutropenia",
       "agranulocytosis",
       "myelosuppression",
-      "bone marrow suppression"
+      "bone marrow suppression",
+      "hypercoagulability",
+      "granulocytopenia",
+      "lymphopenia"
     ],
 
     "cardiovascular": [
@@ -26,7 +29,12 @@
       "cardiotoxicity",
       "heart failure",
       "congestive heart failure",
-      "cardiac arrest"
+      "cardiac arrest",
+      "cardiovascular impairment",
+      "myocardial depression",
+      "cardiovascular complications",
+      "av block",
+      "atrioventricular block"
     ],
 
     "neurologic": [
@@ -40,7 +48,16 @@
       "confusion",
       "syncope",
       "pseudotumor cerebri",
-      "neurotoxicity"
+      "neurotoxicity",
+      "extrapyramidal symptoms",
+      "elevated intracranial pressure"
+    ],
+
+    "gastrointestinal": [
+      "ulceration",
+      "gastrointestinal ulceration",
+      "mucosal ulceration",
+      "ischemic colitis"
     ],
 
     "hepatic": [
@@ -72,7 +89,9 @@
       "immunosuppression",
       "anaphylaxis",
       "angioedema",
-      "cytokine release syndrome"
+      "cytokine release syndrome",
+      "hypersensitivity",
+      "hypersensitivity reaction"
     ],
 
     "metabolic": [
@@ -86,7 +105,10 @@
       "hypocalcemia",
       "methemoglobinemia",
       "rhabdomyolysis",
-      "pancreatitis"
+      "pancreatitis",
+      "lactic acidosis",
+      "metabolic acidosis",
+      "tumor lysis syndrome"
     ],
 
     "musculoskeletal": [
@@ -114,7 +136,12 @@
       "therapeutic efficacy",
       "clinical efficacy",
       "diagnostic efficacy",
-      "drug interaction"
+      "drug interaction",
+      "sympathomimetic",
+      "smooth muscle relaxing",
+      "opioid antagonism",
+      "uterotonic",
+      "alpha adrenergic"
     ],
 
     "pharmacokinetic": [
@@ -154,11 +181,31 @@
       "cns depression",
       "anticholinergic",
       "neuromuscular blockade",
-      "neuroexcitatory"
+      "neuroexcitatory",
+      "hyperkinetic symptoms",
+      "antipsychotic"
+    ],
+
+    "respiratory": [
+      "bronchodilation",
+      "bronchodilatory"
+    ],
+
+    "dermatologic": [
+      "photosensitizing",
+      "photosensitivity"
+    ],
+
+    "renal": [
+      "diuretic",
+      "urinary retention"
     ],
 
     "metabolic": [
-      "dehydration"
+      "dehydration",
+      "change in thyroid function",
+      "hypothyroid",
+      "hypothyroidism"
     ],
 
     "gastrointestinal": [

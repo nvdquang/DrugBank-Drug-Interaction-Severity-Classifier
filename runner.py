@@ -40,6 +40,7 @@ class Runner:
         offset: int | None = None,
         start_id: int | None = None,
         end_id: int | None = None,
+        only_unknown: bool = False,
     ) -> None:
 
         start_time = time.time()
@@ -63,6 +64,7 @@ class Runner:
                 offset=offset,
                 start_id=start_id,
                 end_id=end_id,
+                only_unknown=only_unknown,
             ):
 
                 # --------------------------------------

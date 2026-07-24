@@ -230,6 +230,10 @@ class EventNormalizer:
             cand = re.sub(r'cardic\b', 'cardia', event)
             if cand in self.known_events:
                 return cand
+            # ory -> ion (e.g., bronchodilatory -> bronchodilation)
+            cand = re.sub(r'ory\b', 'ion', event)
+            if cand in self.known_events:
+                return cand
             # antihypertensive -> hypotension
             if event == 'antihypertensive':
                 return 'hypotension'

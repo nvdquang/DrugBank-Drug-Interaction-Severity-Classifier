@@ -137,32 +137,53 @@ class Database:
         sql = """
             UPDATE drug_interactions
             SET severity=%s,
-                canonical_event=%s, # Remove if not needed
-                pattern=%s,         # Remove if not needed
-                confidence=%s       # Remove if not needed
+                canonical_event=%s,
+                pattern=%s,
+                confidence=%s,
+                score=%s,
+                is_high_risk=%s,
+                is_nti=%s
             WHERE id=%s
         """
 
         data = [
-
             (
                 result.severity,
-                result.canonical_event, # Remove if not needed
-                result.pattern,         # Remove if not needed
-                result.confidence,      # Remove if not needed
+                result.canonical_event,
+                result.pattern,
+                result.confidence,
+                result.score,
+                result.is_high_risk,
+                result.is_nti,
                 result.id,
             )
-
             for result in results
-
         ]
 
         with self.write_conn.cursor() as cursor:
-
-            cursor.executemany(
-                sql,
-                data,
-            )
+            try:
+                cursor.executemany(sql, data)
+            except pymysql.Error as e:
+                # Fallback query if new columns are not added to MySQL schema yet
+                fallback_sql = """
+                    UPDATE drug_interactions
+                    SET severity=%s,
+                        canonical_event=%s,
+                        pattern=%s,
+                        confidence=%s
+                    WHERE id=%s
+                """
+                fallback_data = [
+                    (
+                        r.severity,
+                        r.canonical_event,
+                        r.pattern,
+                        r.confidence,
+                        r.id,
+                    )
+                    for r in results
+                ]
+                cursor.executemany(fallback_sql, fallback_data)
 
         self.write_conn.commit()
 

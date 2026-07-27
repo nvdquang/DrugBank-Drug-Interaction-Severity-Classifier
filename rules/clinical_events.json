@@ -63,7 +63,9 @@
     "hepatic": [
       "liver injury",
       "hepatotoxicity",
-      "liver failure"
+      "liver failure",
+      "increased transaminases",
+      "hyperbilirubinemia"
     ],
 
     "renal": [
@@ -91,13 +93,17 @@
       "angioedema",
       "cytokine release syndrome",
       "hypersensitivity",
-      "hypersensitivity reaction"
+      "hypersensitivity reaction",
+      "cytotoxicity",
+      "ototoxicity",
+      "rhabdomyolysis"
     ],
 
     "metabolic": [
       "hypoglycemia",
       "hyperglycemia",
       "hyperkalemia",
+      "water intoxication",
       "hypokalemia",
       "hypernatremia",
       "hyponatremia",
@@ -147,7 +153,11 @@
       "smooth muscle relaxing",
       "opioid antagonism",
       "uterotonic",
-      "alpha adrenergic"
+      "alpha adrenergic",
+      "osteomalacia",
+      "hypertrichosis",
+      "gouty arthritis",
+      "increased glucose"
     ],
 
     "pharmacokinetic": [

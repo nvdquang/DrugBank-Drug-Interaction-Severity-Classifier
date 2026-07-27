@@ -6,7 +6,7 @@ Data models for DrugBank Severity Classification.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 # ==========================================================
@@ -57,6 +57,22 @@ class SeverityResult:
     # Classification confidence
 
     confidence: float = 1.0
+
+    # Rule Engine calculated score
+
+    score: float = 0.0
+
+    # High-Risk drug or combination flag
+
+    is_high_risk: bool = False
+
+    # Narrow Therapeutic Index drug involved
+
+    is_nti: bool = False
+
+    # List of detected risk factors
+    risk_factors: list[str] = field(default_factory=list)
+
 
 
 # ==========================================================

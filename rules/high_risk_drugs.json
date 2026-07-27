@@ -1,0 +1,51 @@
+{
+  "nti_drugs": [
+    "warfarin",
+    "digoxin",
+    "lithium",
+    "theophylline",
+    "tacrolimus",
+    "cyclosporine",
+    "phenytoin",
+    "carbamazepine",
+    "levothyroxine",
+    "amiodarone",
+    "methotrexate",
+    "insulin",
+    "vancomycin",
+    "gentamicin"
+  ],
+  "high_risk_classes": [
+    "anticoagulant",
+    "anticoagulants",
+    "antiplatelet",
+    "antiplatelets",
+    "antiarrhythmic",
+    "antiarrhythmics",
+    "immunosuppressant",
+    "immunosuppressants",
+    "opioid",
+    "opioids",
+    "nsaid",
+    "nsaids",
+    "chemotherapy",
+    "thrombolytic",
+    "thrombolytics"
+  ],
+  "high_risk_events": [
+    "bleeding",
+    "hemorrhage",
+    "arrhythmia",
+    "qt prolongation",
+    "torsades de pointes",
+    "cardiac arrest",
+    "anaphylaxis",
+    "respiratory depression",
+    "renal failure",
+    "acute kidney injury",
+    "hepatotoxicity",
+    "myelosuppression",
+    "serotonin syndrome",
+    "neuroleptic malignant syndrome"
+  ]
+}

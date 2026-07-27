@@ -632,6 +632,15 @@
     "teratogenic": "teratogenicity",
     "teratogenic activities": "teratogenicity",
     "constipating": "constipation",
-    "constipating activities": "constipation"
+    "constipating activities": "constipation",
+    "increased transaminases": "increased transaminases",
+    "osteomalacia": "osteomalacia",
+    "increased glucose": "hyperglycemia",
+    "water intoxication": "water intoxication",
+    "hypertrichosis": "hypertrichosis",
+    "gouty arthritis": "gout",
+    "gout": "gout",
+    "cytotoxicity": "cytotoxicity",
+    "hyperbilirubinemia": "hyperbilirubinemia"
 }
 
